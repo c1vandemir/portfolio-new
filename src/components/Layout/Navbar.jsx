@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTheme } from '../../context/ThemeContext';
 import { useLanguage } from '../../context/LanguageContext';
-import { Moon, Sun, Languages, Menu, X } from 'lucide-react';
+import { Languages, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
   const { lang, toggleLanguage, t } = useLanguage();
 
   useEffect(() => {
@@ -59,17 +57,6 @@ const Navbar = () => {
               <Languages size={18} className="group-hover:text-accentPrimary transition-colors"/>
               <span className="text-xs font-bold uppercase">{lang}</span>
             </button>
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors group"
-              aria-label="Toggle Theme"
-            >
-              {theme === 'dark' ? (
-                <Sun size={18} className="group-hover:text-yellow-400 transition-colors" />
-              ) : (
-                <Moon size={18} className="group-hover:text-accentPrimary transition-colors" />
-              )}
-            </button>
           </div>
         </div>
 
@@ -109,12 +96,6 @@ const Navbar = () => {
                 >
                   <Languages size={18} />
                   <span className="text-xs font-bold uppercase">{lang}</span>
-                </button>
-                <button
-                  onClick={toggleTheme}
-                  className="p-2 rounded-full bg-slate-200 dark:bg-slate-800"
-                >
-                  {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
                 </button>
               </div>
             </div>
