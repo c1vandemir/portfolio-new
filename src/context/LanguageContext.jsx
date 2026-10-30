@@ -3,17 +3,15 @@ import React, { createContext, useContext, useState } from 'react';
 const translations = {
   en: {
     navbar: { about: "About", projects: "Projects", contact: "Contact" },
-    hero: { greeting: "Hi, I'm", role: "I'm currently a 3rd-Year Computer Engineering Student.", cta: "View My Work", cvBtn: "Download CV" },
+    hero: { greeting: "Hi, I'm", role: "I'm currently a 4th-Year Computer Engineering Student.", cta: "View My Work", cvBtn: "Download CV" },
     about: { title: "About Me", bio: "I build modern, highly interactive web applications focusing on aesthetics and user experience.", skills: "My Skills" },
     projects: { title: "Featured Projects", viewCode: "Code", viewLive: "Live" },
-    contact: { title: "Get In Touch", name: "Name", email: "Email", message: "Message", send: "Send Message", success: "Message sent!" }
   },
   tr: {
     navbar: { about: "Hakkımda", projects: "Projeler", contact: "İletişim" },
-    hero: { greeting: "Merhaba, Ben", role: "Şu an 3. Sınıf Bilgisayar Mühendisliği Öğrencisiyim.", cta: "Çalışmalarımı Gör", cvBtn: "CV İndir" },
+    hero: { greeting: "Merhaba, Ben", role: "Şu an 4. Sınıf Bilgisayar Mühendisliği Öğrencisiyim.", cta: "Çalışmalarımı Gör", cvBtn: "CV İndir" },
     about: { title: "Hakkımda", bio: "Estetik ve kullanıcı deneyimine odaklanan, modern ve etkileşimli web uygulamaları geliştiriyorum.", skills: "Yeteneklerim" },
     projects: { title: "Öne Çıkan Projeler", viewCode: "Kod", viewLive: "Canlı" },
-    contact: { title: "İletişime Geç", name: "İsim", email: "E-posta", message: "Mesaj", send: "Gönder", success: "Mesaj gönderildi!" }
   }
 };
 

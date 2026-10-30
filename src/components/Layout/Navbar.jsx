@@ -34,7 +34,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-accentPrimary to-purple-500">
+        <a href="#" className="text-2xl md:text-3xl name-outline">
           Cıvan Demir
         </a>
 

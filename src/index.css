@@ -13,3 +13,16 @@
     @apply bg-white/10 dark:bg-black/10 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-lg;
   }
 }
+
+@layer components {
+  /* İsim: beyaz dolgu + mavi çerçeve */
+  .name-outline {
+    @apply font-display font-extrabold text-white;
+    -webkit-text-stroke: 1.5px theme('colors.accentPrimary');
+    paint-order: stroke fill;
+    text-shadow: 0 2px 12px rgb(59 130 246 / 0.35);
+  }
+  .name-outline-lg {
+    -webkit-text-stroke-width: 3px;
+  }
+}

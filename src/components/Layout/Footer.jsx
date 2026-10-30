@@ -15,11 +15,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-10 border-t border-slate-200 dark:border-slate-800 mt-20 relative z-10 glass rounded-t-3xl">
+    <footer id="contact" className="py-10 border-t border-slate-200 dark:border-slate-800 mt-20 relative z-10 glass rounded-t-3xl">
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
         
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-accentPrimary to-purple-500 mb-2">
+          <span className="text-2xl name-outline mb-2">
             Cıvan Demir
           </span>
           <p className="text-sm text-slate-500 dark:text-slate-400">

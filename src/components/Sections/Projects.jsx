@@ -8,6 +8,22 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Yelden Tekstil",
+      description: "İstanbul Güngören'deki toptan kumaş firması için TR/EN dil destekli kurumsal web sitesi: koleksiyon kataloğu, sertifikalar, WhatsApp ve harita entegrasyonu.",
+      image: "/projects/yelden_site.jpg",
+      tags: ["React", "React Router", "Web", "Freelance"],
+      liveUrl: "https://yeldentekstil.com",
+      githubUrl: "#"
+    },
+    {
+      title: "Themis Courts",
+      description: "Kadir Has Üniversitesi'nde düzenlenen Themis Court Simulations '27 hukuk simülasyonu için TR/EN, geri sayımlı tanıtım ve başvuru sitesi: 6 mahkeme, ekip, mekân, SSS ve iletişim.",
+      image: "/projects/themis_site.jpg",
+      tags: ["React", "i18next", "Netlify", "Web"],
+      liveUrl: "https://themiscourts.netlify.app/",
+      githubUrl: "#"
+    },
+    {
       title: "İnci Fal",
       description: "Kullanıcılara yapay zeka destekli fal yorumları sunan yenilikçi bir mobil uygulama.",
       image: "/projects/inci_fal_gorsel.jpeg",
@@ -56,6 +72,39 @@ const Projects = () => {
       liveUrl: "#",
       githubUrl: "#",
       containImage: true
+    },
+    {
+      title: "Tarot ve Astroloji Danışmanlık",
+      description: "Singleton, Factory, Observer, Decorator, Strategy ve Adapter tasarım kalıplarıyla geliştirilmiş, tarot falı ve günlük burç yorumu sunan web uygulaması.",
+      image: "/projects/tarot_astroloji.jpg",
+      tags: ["Java", "Spring Boot", "Thymeleaf", "Design Patterns"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Kurumsal Şirket Ağı",
+      description: "Merkez ofis ve iki şubeden oluşan WAN'ın Cisco Packet Tracer'da tasarımı: VLAN, OSPF, DHCP, DNS, NAT ve ACL yapılandırmaları.",
+      image: "/projects/bilgisayar_aglari.png",
+      tags: ["Cisco Packet Tracer", "OSPF", "VLAN", "Networking"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Lexical Analyzer",
+      description: "Girilen metnin geçerli bir değişken adı olup olmadığını Regex/DFA kurallarıyla denetleyen, tkinter arayüzlü sözcüksel çözümleyici.",
+      image: "/projects/bicimsel_diller.png",
+      tags: ["Python", "Regex", "DFA", "Tkinter"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Mod-8 Senkron Sayıcı",
+      description: "JK flip-flop'larla Karnaugh haritası üzerinden tasarlanan, asenkron clear/preset destekli ve 7-segment göstergeli 0–7 sayıcı devresi.",
+      image: "/projects/mantik_devreleri.png",
+      tags: ["Logisim", "Digital Logic", "JK Flip-Flop"],
+      liveUrl: "#",
+      githubUrl: "#",
+      containImage: true
     }
   ];
 
@@ -67,7 +116,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-accentPrimary to-purple-500 inline-block mb-6"
+            className="text-4xl md:text-6xl name-outline inline-block mb-6"
           >
             {t('projects.title')}
           </motion.h2>

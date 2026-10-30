@@ -43,7 +43,7 @@ const About = () => {
           className="max-w-4xl mx-auto"
         >
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-accentPrimary to-purple-500 inline-block mb-6">
+            <h2 className="text-4xl md:text-6xl name-outline inline-block mb-6">
               {t('about.title')}
             </h2>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">

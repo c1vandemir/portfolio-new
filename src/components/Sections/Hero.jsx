@@ -7,7 +7,7 @@ const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="min-h-[85vh] flex flex-col justify-center items-center text-center px-6 relative">
+    <section className="min-h-[85dvh] flex flex-col justify-center items-center text-center px-6 relative">
       
       {/* Decorative floating elements */}
       <motion.div 
@@ -42,8 +42,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
-          Cıvan <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-accentPrimary via-purple-500 to-pink-500">
+          <span className="name-outline name-outline-lg">
+            Cıvan <br />
             Demir
           </span>
         </motion.h1>
